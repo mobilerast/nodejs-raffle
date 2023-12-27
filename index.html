@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Year Raffle</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to the New Year Raffle!</h1>
+    </div>
+
+    <div class="container">
+        <p>Click the button below to draw a random name. Each visitor gets to draw once. The drawn name won't be available for others.</p>
+        <button onclick="drawName()">Draw a Name</button>
+        <p id="result"></p>
+    </div>
+
+    <div class="footer">
+        <p>Follow Rastmobile on <a href="https://rastmobile.com">Website</a> | <a href="https://twitter.com/rastmobile">Twitter</a> | <a href="https://facebook.com/rastmobile">Facebook</a></p>
+    </div>
+
+    <script>
+        function drawName() {
+            fetch('/raffle')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('result').textContent = data;
+                });
+        }
+    </script>
+</body>
+</html>
