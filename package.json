@@ -1,0 +1,31 @@
+{
+    "name": "nodejs-raffle",
+    "version": "1.0.0",
+    "description": "Node.js-Raffle by Rast Mobile is an engaging and intuitive web application designed to conduct raffles with ease and fairness. Tailored for events like New Year celebrations, this app ensures a transparent and random selection process, allowing each participant a unique chance to win. Built with Node.js and Express, it offers a streamlined user experience and a simple yet effective interface for both organizers and participants.",
+    "main": "app.js",
+    "scripts": {
+      "start": "node app.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/mobilerast/nodejs-raffle.git"
+    },
+    "keywords": [
+      "raffle",
+      "nodejs",
+      "express",
+      "random-selection",
+      "rast mobile"
+    ],
+    "author": "Rast Mobile <mobilerast@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/mobilerast/nodejs-raffle/issues"
+    },
+    "homepage": "https://rastmobile.com",
+    "dependencies": {
+      "express": "^4.17.1",
+      "express-session": "^1.17.1"
+    }
+  }
+  
